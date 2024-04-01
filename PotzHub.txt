@@ -9,12 +9,17 @@ if game:GetService("Workspace").Map:FindFirstChild("KitsuneIsland") then
 
                         {
                             ["name"]= "Kitsune island🏝",
-                            ["value"]= "```found 👁‍🗨```",
+                            ["value"]= "```Kitsune Island : ✅```",
                             ["inline"]= true
                         },
                         {
-                            ["name"]= "join server",
+                            ["name"]= "Copy Script ⬇",
                             ["value"]= '```game:GetService("TeleportService"):TeleportToPlaceInstance('..game.PlaceId..', "'..game.JobId..'", game.Players.LocalPlayer)```',
+                            ["inline"]= true
+                        },
+                        {
+                            ["name"]= "Job ID ⬇",
+                            ["value"]= '```'..game.JobId..'```',
                             ["inline"]= true
                         },
                     }              
@@ -44,18 +49,23 @@ description = "```" .. player.DisplayName .. " (" .. player.Name .. ") ```",
 color = tonumber(322852),
 fields = {
 {
-    name = "country",
+    name = "Country🌐",
     value = "```Player's country code: " .. code .. "```",
     inline = true
 },
 {
-    name = "server",
+    name = "Server📜",
     value = '```game:GetService("TeleportService"):TeleportToPlaceInstance('..game.PlaceId..', "'..game.JobId..'", game.Players.LocalPlayer)```',
     inline = true
 },
 {
-    name = "ty for using",
-    value = "Main script Mbm Hub",
+    name = "Job ID ⬇",
+    value = '```'..game.JobId..'```',
+    inline = true
+},
+{
+    name = "Player Executed!",
+    value = "Potz Hub Premium Script",
     inline = true
 }
 }
@@ -95,6 +105,11 @@ if game:GetService("Lighting").Sky.MoonTextureId=="http://www.roblox.com/asset/?
                             ["value"]= '```game:GetService("TeleportService"):TeleportToPlaceInstance('..game.PlaceId..', "'..game.JobId..'", game.Players.LocalPlayer)```',
                             ["inline"]= true
                         },
+                        {
+                            ["name"]= "Job ID ⬇",
+                            ["value"]= '```'..game.JobId..'```',
+                            ["inline"]= true
+                        },
                     }              
                 }
             }
@@ -120,12 +135,17 @@ if game:GetService("Workspace").Map:FindFirstChild("MysticIsland") then
 
                         {
                             ["name"]= "Mirage island🏝",
-                            ["value"]= "```found 👁‍🗨```",
+                            ["value"]= "```Mirage Island : ✅```",
                             ["inline"]= true
                         },
                         {
-                            ["name"]= "join server",
+                            ["name"]= "Copy Script ⬇",
                             ["value"]= '```game:GetService("TeleportService"):TeleportToPlaceInstance('..game.PlaceId..', "'..game.JobId..'", game.Players.LocalPlayer)```',
+                            ["inline"]= true
+                        },
+                        {
+                            ["name"]= "Job ID ⬇",
+                            ["value"]= '```'..game.JobId..'```',
                             ["inline"]= true
                         },
                     }              
