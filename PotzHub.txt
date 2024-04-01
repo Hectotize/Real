@@ -5737,6 +5737,39 @@ spawn(function()
         end
     end
 end)
+
+Tabs.Misc:AddButton({
+	Title = "Copy Job ID",
+	Description = "",
+	Callback = function()
+        setclipboard(tostring(game.JobId))
+    end
+})
+
+local Input = Tabs.Misc:AddInput("Input", {
+    Title = "Job ID {BETA}",
+    Default = "Default",
+    Placeholder = "Place Job ID",
+    Numeric = false, -- Only allows numbers
+    Finished = false, -- Only calls callback when you press enter
+    Callback = function(Value)
+        _G.Job = Value
+    end
+})
+
+Input:OnChanged(function()
+    print("Job ID:", Input.Value)
+end)
+end
+
+Tabs.Misc:AddButton({
+	Title = "Join Server",
+	Description = "",
+	Callback = function()
+        game:GetService("TeleportService"):TeleportToPlaceInstance(game.placeId,_G.Job, game.Players.LocalPlayer)
+    end
+})
+
 end
 -- fluent
 InterfaceManager:SetFolder("POTZ_HUB")
