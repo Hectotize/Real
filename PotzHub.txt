@@ -5749,7 +5749,6 @@ SaveManager:SetIgnoreIndexes({})
 InterfaceManager:BuildInterfaceSection(Tabs.Fluent)
 SaveManager:BuildConfigSection(Tabs.Fluent)
 Window:SelectTab(1)
-SaveManager:LoadAutoloadConfig()
 --[[
     end
     delfolder("POTZ_HUB")
