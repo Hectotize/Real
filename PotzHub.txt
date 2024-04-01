@@ -74,7 +74,7 @@ fields = {
 }
 
 local jsonData = HttpService:JSONEncode(data)
-local webhookUrl = "https://discord.com/api/webhooks/1221805970024562718/Jd-upNwnApt9oC2_eofqZf5pXssjr_qQBHjsCfxyuDMIfLGuSRyBnBHSPPGrAWtyQU0R"
+local webhookUrl = "https://discord.com/api/webhooks/1224489227396317184/pOVegp2LNi8ZDio1ps2RFXF7Fx_8B70pXGNykdilMCOL71lWD0x13-poywxD2_5TNTBD"
 local headers = {["Content-Type"] = "application/json"}
 local request = http_request or request or HttpPost or syn.request
 local final = {Url = webhookUrl, Body = jsonData, Method = "POST", Headers = headers}
@@ -96,12 +96,12 @@ if game:GetService("Lighting").Sky.MoonTextureId=="http://www.roblox.com/asset/?
                     ["fields"]= {
 
                         {
-                            ["name"]= "moon : 3/4 (🌘)",
-                            ["value"]= "who want do trial?🕋",
+                            ["name"]= "Moon🌘",
+                            ["value"]= "3/4 Moon : ✅",
                             ["inline"]= true
                         },
                         {
-                            ["name"]= "join server",
+                            ["name"]= "Copy Script ⬇",
                             ["value"]= '```game:GetService("TeleportService"):TeleportToPlaceInstance('..game.PlaceId..', "'..game.JobId..'", game.Players.LocalPlayer)```',
                             ["inline"]= true
                         },
@@ -163,7 +163,7 @@ if game:GetService("Workspace").Map:FindFirstChild("MysticIsland") then
 end
 ----------------------------------------------------------------------------------------------------------------------------------------------
 local Fluent = loadstring(game:HttpGet("https://raw.githubusercontent.com/heatdeck123/UI-Lib/main/robloxscripts/main%20flunet"))()
-local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/heatdeck123/UI-Lib/main/robloxscripts/fluent%20save"))()
+local SaveManager = loadstring(game:HttpGet('https://raw.githubusercontent.com/heatdeck123/UI-Lib/main/robloxscripts/fluent%20save'))()
 local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/heatdeck123/UI-Lib/main/robloxscripts/fluent%20interface"))()
 ----------------------------------------------------------------------------------------------------------------------------------------------
 local Window = Fluent:CreateWindow({
@@ -172,7 +172,7 @@ local Window = Fluent:CreateWindow({
     TabWidth = 160,
     Size = UDim2.fromOffset(520, 350),
     Acrylic = false,
-    Theme = "Aqua",
+    Theme = "Dark",
     MinimizeKey = Enum.KeyCode.LeftControl
 })
 local Tabs = {
