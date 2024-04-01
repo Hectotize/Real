@@ -163,7 +163,6 @@ if game:GetService("Workspace").Map:FindFirstChild("MysticIsland") then
 end
 ----------------------------------------------------------------------------------------------------------------------------------------------
 local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
-local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/SaveManager.lua"))()
 local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/InterfaceManager.lua"))()
 ----------------------------------------------------------------------------------------------------------------------------------------------
 local Window = Fluent:CreateWindow({
@@ -5741,13 +5740,8 @@ end)
 end
 -- fluent
 InterfaceManager:SetFolder("POTZ_HUB")
-SaveManager:SetFolder("POTZ_HUB")
-SaveManager:SetLibrary(Fluent)
 InterfaceManager:SetLibrary(Fluent)
-SaveManager:IgnoreThemeSettings()
-SaveManager:SetIgnoreIndexes({})
 InterfaceManager:BuildInterfaceSection(Tabs.Fluent)
-SaveManager:BuildConfigSection(Tabs.Fluent)
 Window:SelectTab(1)
 --[[
     end
