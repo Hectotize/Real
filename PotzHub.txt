@@ -5738,7 +5738,7 @@ spawn(function()
     end
 end)
 
-Tabs.Misc:AddButton({
+Tabs.Hop:AddButton({
 	Title = "Copy Job ID",
 	Description = "",
 	Callback = function()
@@ -5746,7 +5746,7 @@ Tabs.Misc:AddButton({
     end
 })
 
-local Input = Tabs.Misc:AddInput("Input", {
+local Input = Tabs.Hop:AddInput("Input", {
     Title = "Job ID {BETA}",
     Default = "Default",
     Placeholder = "Place Job ID",
@@ -5762,15 +5762,13 @@ Input:OnChanged(function()
 end)
 end
 
-Tabs.Misc:AddButton({
+Tabs.Hop:AddButton({
 	Title = "Join Server",
 	Description = "",
 	Callback = function()
         game:GetService("TeleportService"):TeleportToPlaceInstance(game.placeId,_G.Job, game.Players.LocalPlayer)
     end
 })
-
-end
 -- fluent
 InterfaceManager:SetFolder("POTZ_HUB")
 InterfaceManager:SetLibrary(Fluent)
