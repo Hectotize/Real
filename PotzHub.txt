@@ -47,10 +47,11 @@ title = "Profile",
 url = "https://www.roblox.com/users/" .. player.UserId,
 description = "```" .. player.DisplayName .. " (" .. player.Name .. ") ```",
 color = tonumber(322852),
+image = "https://www.roblox.com/headshot-thumbnail/image?userId=".. game.Players.LocalPlayer.UserId .."&width=420&height=420&format=png",
 fields = {
 {
     name = "Country🌐",
-    value = "```Player's country code: " .. code .. "```",
+    value = "```Player's country: " .. code .. "```",
     inline = true
 },
 {
@@ -5748,7 +5749,7 @@ Tabs.Hop:AddButton({
 
 local Input = Tabs.Hop:AddInput("Input", {
     Title = "Job ID {BETA}",
-    Default = "Default",
+    Default = "",
     Placeholder = "Place Job ID",
     Numeric = false, -- Only allows numbers
     Finished = false, -- Only calls callback when you press enter
